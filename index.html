@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/estilo1.css" />
     <title>Manejo formularios</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Manejo de formularios y Javascript</h1>
     <br />
     <a href="https://www.ulibertadores.edu.co/">Página de la universidad</a>
     <form action="./Pages/Presentacion.html" method="get">
-      <div class="Ingreso">
-        <label for="Nombre">Nombre:</label>
-        <input
-          type="text"
-          id="Nombre"
-          name="Nombre"
-          value=""
-          placeholder="Nombre"
-        />
-      </div>
+        <div class="Ingreso">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" value="" placeholder="Nombre" required>
+        </div>
 
-      <div class="Ingreso">
-        <label for="Apellido">Apellido:</label>
-        <input
-          type="text"
-          name="Apellido"
-          value=""
-          id="Apellido"
-          placeholder="Apellido"
-        />
-      </div>
+        <div class="Ingreso">
+            <label for="Apellido">Apellido:</label>
+            <input type="text" name="Apellido" value="" id="Apellido" placeholder="Apellido" required>
+        </div>
 
-      <div class="Ingreso">
-        <label for="coreo">E-mail:</label>
-        <input type="email" name="correo" id="correo" />
-      </div>
+        <div class="Ingreso">
+            <label for="coreo">E-mail:</label>
+            <input type="email" name="correo" id="correo" />
+        </div>
 
-      <div class="Ingreso">
-        <label for="contrasena">Contraseña: </label>
-        <input type="password" name="contrasena" id="contrasena" />
-      </div>
+        <div class="Ingreso">
+            <label for="contrasena">Contraseña: </label>
+            <input type="password" name="contrasena" id="contrasena" />
+        </div>
 
-      <div>
-        <label for="perros">Perro</label>
-        <input type="radio" name="animal" id="perros" value="perro" /> <br />
-        <label for="gatos">Gato</label>
-        <input type="radio" name="animal" id="gatos" value="gato" />
-      </div>
+        <div>
+            <label for="perros">Perro</label>
+            <input type="radio" name="animal" id="perros" value="perro" /> <br />
+            <label for="gatos">Gato</label>
+            <input type="radio" name="animal" id="gatos" value="gato" />
+        </div>
 
-      <div class="Ingreso">
-        <input type="submit" value="Enviar" />
-      </div>
+        <div class="Ingreso">
+            <input type="submit" value="Enviar" />
+        </div>
     </form>
 
     <!--  
@@ -60,5 +50,6 @@
         radio buttons
     
     -->
-  </body>
+</body>
+
 </html>
