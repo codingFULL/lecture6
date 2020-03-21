@@ -9,7 +9,7 @@
   <body>
     <h1>Manejo de formularios y Javascript</h1>
     <br />
-    <a href="https://www.ulibertadores.edu.co/">Página de la universidad</a>
+    <a href="./Pages/Presentacion.html">Página de la universidad</a>
     <form action="./Pages/Presentacion.html" method="get">
       <div class="Ingreso">
         <label for="Nombre">Nombre:</label>
@@ -35,12 +35,18 @@
 
       <div class="Ingreso">
         <label for="coreo">E-mail:</label>
-        <input type="email" name="correo" id="correo" />
+        <input type="email" name="correo" id="correo" required />
       </div>
 
       <div class="Ingreso">
         <label for="contrasena">Contraseña: </label>
-        <input type="password" name="contrasena" id="contrasena" />
+        <input
+          type="password"
+          name="contrasena"
+          id="contrasena"
+          minlength="3"
+          pattern="(?=.*\d).{3,}"
+        />
       </div>
 
       <div>
